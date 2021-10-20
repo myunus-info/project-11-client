@@ -1,0 +1,42 @@
+.header-main {
+  padding: 90px 0;
+}
+.banner-text h1 {
+  color: #1f1632;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin: 70px 0 30px 0;
+}
+.banner-text p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 28px;
+  margin-bottom: 40px;
+  padding-right: 125px;
+}
+.banner-text button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 28px;
+  background-color: #251d58;
+  padding: 7px 20px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s;
+}
+.banner-text button:hover {
+  background-color: #0b062e;
+  color: #eee;
+}
+
+.banner-img {
+  height: 502px;
+}
+.banner-img img {
+  height: 100%;
+}

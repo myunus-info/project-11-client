@@ -1,0 +1,16 @@
+.sidebar .navbar-nav {
+  margin-left: 35px;
+}
+.sidebar .navbar-nav .nav-item .nav-link {
+  color: #1f1632;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: 24px;
+}
+.sidebar .navbar-nav .nav-item {
+  margin-bottom: 10px;
+}
+.sidebar .navbar-nav .nav-item .nav-link span {
+  padding-right: 10px;
+}

@@ -1,0 +1,17 @@
+.testimonial {
+  margin: 50px 0 90px 0;
+  padding: 90px 0;
+  background-color: #f6f6f6;
+}
+
+.testi-top h2 {
+  color: #1f1632;
+  font-size: 34px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  line-height: 50px;
+}
+
+.testi-top {
+  margin-bottom: 50px;
+}

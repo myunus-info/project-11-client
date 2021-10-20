@@ -1,0 +1,28 @@
+tr td {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 65px;
+  border: none;
+}
+
+tr select option {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 65px;
+}
+
+tr .form-select {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 65px;
+  border: none;
+}
+tr .form-select:focus {
+  box-shadow: none;
+}

@@ -1,0 +1,32 @@
+.table-design .table {
+  background-color: #fff;
+}
+.table-design .table tr th {
+  color: #686868;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  padding: 15px;
+  background-color: #f4f7fc;
+}
+
+/* .table-design .table thead tr {
+  background-color: #f4f7fc;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+} */
+.table-design .table {
+  padding-top: -10px;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 15px;
+  padding: 20px;
+}
+.table-design {
+  background-color: #f4f7fc;
+  min-height: 100vh;
+  padding: 25px 0 0 35px;
+}

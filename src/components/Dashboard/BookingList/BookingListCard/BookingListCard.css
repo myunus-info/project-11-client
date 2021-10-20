@@ -1,0 +1,50 @@
+.booking-card img {
+  width: 60px;
+}
+.booking-card {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 10px;
+}
+.bookingCard h3 {
+  color: #1f1632;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  line-height: 35px;
+}
+.bookingCard p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 24px;
+}
+.bookingCard span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+#pending {
+  color: #ff4545;
+  background-color: #ffe3e3;
+  height: 40px;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+#done {
+  color: #009444;
+  background-color: #c6ffe0;
+  height: 40px;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+#onGoing {
+  color: #fda500;
+  background-color: #fdf3de;
+  height: 40px;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
