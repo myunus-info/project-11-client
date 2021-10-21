@@ -1,14 +1,13 @@
-import React from "react";
-import "./Footer.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebookSquare,
   faInstagram,
   faLinkedinIn,
   faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
+} from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -49,7 +48,7 @@ const Footer = () => {
             <h3>About Us</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
-              commodo ipsum duis laoreet maecenas. Feugiat{" "}
+              commodo ipsum duis laoreet maecenas. Feugiat{' '}
             </p>
             <ul className="d-flex">
               <li>
@@ -78,10 +77,10 @@ const Footer = () => {
       </div>
       <p
         style={{
-          backgroundColor: "#1f1753",
-          padding: "15px 0",
-          marginTop: "35px",
-          color: "rgba(255, 255, 255, 0.7)",
+          backgroundColor: '#1f1753',
+          padding: '15px 0',
+          marginTop: '35px',
+          color: 'rgba(255, 255, 255, 0.7)',
         }}
         className="text-center"
       >

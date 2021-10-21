@@ -5,40 +5,13 @@ import logo from '../../../../img/logo.png';
 import SideBarModified from '../../SideBarModified/SideBarModified';
 import OrderListDetails from '../OrderListDetails/OrderListDetails';
 
-// const tableData = [
-//   {
-//     id: 1,
-//     Name: 'Sufi Ahmed Hamim',
-//     EmailID: 'sufi@gmail.com',
-//     Service: 'Office Interior Design',
-//     PayWith: 'Credit Card',
-//     Status: ['Pending', 'On going', 'Done'],
-//   },
-//   {
-//     id: 2,
-//     Name: 'Ismail khukon',
-//     EmailID: 'ismail@gmail.com',
-//     Service: 'House Exterior Polish',
-//     PayWith: 'Credit Card',
-//     Status: ['Pending', 'On going', 'Done'],
-//   },
-//   {
-//     id: 3,
-//     Name: 'Hasan Sharif Nadim',
-//     EmailID: 'hasan@gmail.com',
-//     Service: 'Garden caretaking',
-//     PayWith: 'Credit Card',
-//     Status: ['Pending', 'On going', 'Done'],
-//   },
-// ];
-
 const OrderList = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [loggedInUser] = useContext(UserContext);
 
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
-    fetch('https://luxuryliving.herokuapp.com/orders')
+    fetch('http://localhost:5000/orders')
       .then(res => res.json())
       .then(data => setTableData(data));
   }, []);

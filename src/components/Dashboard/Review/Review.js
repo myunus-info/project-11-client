@@ -23,7 +23,7 @@ const Review = () => {
       image: imageURL,
     };
 
-    fetch('https://luxuryliving.herokuapp.com/addReview', {
+    fetch('http://localhost:5000/addReview', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(reviewData),

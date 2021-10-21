@@ -13,11 +13,11 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
 
 const SideBarModified = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [loggedInUser] = useContext(UserContext);
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    fetch('https://luxuryliving.herokuapp.com/isAdmin', {
+    fetch('http://localhost:5000/isAdmin', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({ email: loggedInUser.email }),

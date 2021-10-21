@@ -12,14 +12,14 @@ import logo from '../../../img/logo.png';
 import { useParams } from 'react-router-dom';
 
 const Book = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [loggedInUser] = useContext(UserContext);
   const [toggleChecks, setToggleChecks] = useState(1);
   const [shippingData, setShippingData] = useState();
   const [booking, setBooking] = useState({});
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`https://luxuryliving.herokuapp.com/book/${id}`)
+    fetch(`http://localhost:5000/book/${id}`)
       .then(res => res.json())
       .then(data => setBooking(data));
   }, [id]);
@@ -45,7 +45,7 @@ const Book = () => {
       paymentId,
     };
 
-    fetch('https://luxuryliving.herokuapp.com/addBooking', {
+    fetch('http://localhost:5000/addBooking', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(orderDetails),

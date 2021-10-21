@@ -1,12 +1,12 @@
 import React from 'react';
 import './ManageServiceTable.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 const ManageServiceTable = ({ service }) => {
   const handleDelete = e => {
     console.log(service._id);
-    fetch(`https://luxuryliving.herokuapp.com/booking/${service._id}`, {
+    fetch(`http://localhost:5000/booking/${service._id}`, {
       method: 'DELETE',
     })
       .then(res => res.json())

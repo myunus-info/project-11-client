@@ -6,7 +6,7 @@ import SideBarModified from '../SideBarModified/SideBarModified';
 import { useForm } from 'react-hook-form';
 
 const MakeAdmin = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [loggedInUser] = useContext(UserContext);
   const {
     register,
     handleSubmit,
@@ -14,7 +14,7 @@ const MakeAdmin = () => {
   } = useForm();
 
   const onSubmit = data => {
-    fetch('https://luxuryliving.herokuapp.com/makeAdmin', {
+    fetch('http://localhost:5000/makeAdmin', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(data),

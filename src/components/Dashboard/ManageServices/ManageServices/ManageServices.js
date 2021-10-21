@@ -5,27 +5,12 @@ import { UserContext } from '../../../../App';
 import SideBarModified from '../../SideBarModified/SideBarModified';
 import ManageServiceTable from '../ManageServiceTable/ManageServiceTable';
 
-const servicesTable = [
-  {
-    id: 1,
-    title: 'Office Interior Design',
-  },
-  {
-    id: 2,
-    title: 'Showroom Design',
-  },
-  {
-    id: 2,
-    title: 'Residential/ Home',
-  },
-];
-
 const ManageServices = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [loggedInUser] = useContext(UserContext);
   const [servicesTable, setServicesTable] = useState([]);
 
   useEffect(() => {
-    fetch('https://luxuryliving.herokuapp.com/bookings')
+    fetch('http://localhost:5000/bookings')
       .then(res => res.json())
       .then(data => setServicesTable(data));
   }, []);

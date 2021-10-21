@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './BookingList.css';
 import BookingListCard from '../BookingListCard/BookingListCard';
 import { UserContext } from '../../../../App';
@@ -10,7 +10,7 @@ const BookingList = () => {
   const [serviceDetails, setServiceDetails] = useState([]);
 
   useState(() => {
-    fetch('https://luxuryliving.herokuapp.com/bookingsList')
+    fetch('http://localhost:5000/bookingsList')
       .then(res => res.json())
       .then(data => setServiceDetails(data));
   }, []);

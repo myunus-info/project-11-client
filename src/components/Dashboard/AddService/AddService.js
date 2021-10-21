@@ -22,7 +22,7 @@ const AddService = () => {
       description: data.description,
       image: imageURL,
     };
-    fetch('https://luxuryliving.herokuapp.com/addService', {
+    fetch('http://localhost:5000/addService', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(formData),

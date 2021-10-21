@@ -18,7 +18,7 @@ initializeLoginFramework();
 
 const Login = () => {
   const [newUser, setNewUser] = useState(false);
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [, setLoggedInUser] = useContext(UserContext);
   const [user, setUser] = useState({
     isSignedIn: false,
     name: '',
