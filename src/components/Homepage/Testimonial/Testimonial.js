@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Testimonial.css';
 import TestimonialCard from '../TestimonialCard/TestimonialCard';
-import { useEffect } from 'react/cjs/react.development';
 
 const Testimonial = () => {
   const [testimonialData, setTestimonialData] = useState([]);
