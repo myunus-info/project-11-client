@@ -14,7 +14,7 @@ const MakeAdmin = () => {
   } = useForm();
 
   const onSubmit = data => {
-    fetch('http://localhost:5000/makeAdmin', {
+    fetch('https://luxuryliving.herokuapp.com/makeAdmin', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(data),

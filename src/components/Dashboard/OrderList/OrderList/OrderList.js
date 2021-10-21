@@ -11,7 +11,7 @@ const OrderList = () => {
   const [tableData, setTableData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/orders')
+    fetch('https://luxuryliving.herokuapp.com/orders')
       .then(res => res.json())
       .then(data => setTableData(data));
   }, []);

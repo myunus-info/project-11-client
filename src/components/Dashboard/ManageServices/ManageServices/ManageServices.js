@@ -10,7 +10,7 @@ const ManageServices = () => {
   const [servicesTable, setServicesTable] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/bookings')
+    fetch('https://luxuryliving.herokuapp.com/bookings')
       .then(res => res.json())
       .then(data => setServicesTable(data));
   }, []);

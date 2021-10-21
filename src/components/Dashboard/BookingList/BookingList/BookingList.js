@@ -10,7 +10,7 @@ const BookingList = () => {
   const [serviceDetails, setServiceDetails] = useState([]);
 
   useState(() => {
-    fetch('http://localhost:5000/bookingsList')
+    fetch('https://luxuryliving.herokuapp.com/bookingsList')
       .then(res => res.json())
       .then(data => setServiceDetails(data));
   }, []);
